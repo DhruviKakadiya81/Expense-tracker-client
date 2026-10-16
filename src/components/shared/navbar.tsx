@@ -19,7 +19,7 @@ export function Navbar() {
   const avatarSrc = user?.avatarUrl ? `${serverUrl}${user.avatarUrl}` : "";
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 px-4 md:px-8 backdrop-blur-md">
+    <header className="shrink-0 z-30 flex h-16 w-full items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 px-4 md:px-8 backdrop-blur-md">
       <div className="flex items-center gap-3">
         <Link href="/dashboard" className="flex items-center gap-2.5 group">
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">

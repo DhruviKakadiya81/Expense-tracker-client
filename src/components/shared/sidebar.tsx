@@ -16,7 +16,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full md:w-64 shrink-0 border-b md:border-b-0 md:border-r border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-950/40 p-4">
+    <aside className="w-full md:w-64 shrink-0 border-b md:border-b-0 md:border-r border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-950/40 p-4 md:h-full md:overflow-y-auto">
       <nav className="flex md:flex-col gap-1.5 overflow-x-auto md:overflow-visible">
         {navigation.map((item) => {
           const isActive = pathname === item.href || (item.href !== "/dashboard" && pathname.startsWith(item.href));
